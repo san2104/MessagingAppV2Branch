@@ -24,7 +24,7 @@ mongoose
     console.log(err.message);
   });
 
-//API routes
+//API routes.
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
