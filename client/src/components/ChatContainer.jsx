@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ChatInput from "./ChatInput";
 import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
+import { BsCircleFill } from "react-icons/bs";
 import { sendMessageRoute, receiveMessageRoute } from "../utils/APIRoutes";
 
 export default function ChatContainer({ currentChat, socket }) {
@@ -78,6 +79,7 @@ export default function ChatContainer({ currentChat, socket }) {
       <div className="chat-header">
         <div className="user-details">
           <div className="username">
+            <BsCircleFill />
             <h2>{currentChat.username}</h2>
           </div>
         </div>
@@ -122,6 +124,12 @@ const Container = styled.div`
         h2 {
           font-weight: 600;
           color: black;
+          display: inline-block;
+        }
+        svg {
+          margin-right: 0.5rem;
+          font-size: 1rem;
+          color: green;
         }
       }
     }

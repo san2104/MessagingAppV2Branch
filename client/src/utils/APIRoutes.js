@@ -7,4 +7,3 @@ export const allUserTypeRoute = `${host}/api/auth/all`;
 export const allAgentsRoute = `${host}/api/auth/allAgents`;
 export const sendMessageRoute = `${host}/api/messages/addmsg`;
 export const receiveMessageRoute = `${host}/api/messages/getmsg`;
-export const setAvatarRoute = `${host}/api/auth/setavatar`;
