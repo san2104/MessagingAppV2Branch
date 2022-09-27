@@ -32,7 +32,6 @@ export default function Chat() {
   //whenever user has logged in and online, open a socket
   useEffect(() => {
     if (currentUser) {
-      console.log("add-user listener");
       socket.current = io(host);
       socket.current.emit("add-user", currentUser._id);
       if (currentUser.userType === "customer") {

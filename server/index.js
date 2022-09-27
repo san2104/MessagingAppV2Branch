@@ -54,7 +54,7 @@ io.on("connection", (socket) => {
   });
 
   socket.on("add-user", (userId) => {
-    console.log("user connected", socket.id);
+    console.log("user connected", userId);
     onlineUsers.set(userId, socket.id);
   });
 
