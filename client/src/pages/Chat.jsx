@@ -32,6 +32,7 @@ export default function Chat() {
   //whenever user has logged in and online, open a socket
   useEffect(() => {
     if (currentUser) {
+      console.log("add-user listener");
       socket.current = io(host);
       socket.current.emit("add-user", currentUser._id);
       if (currentUser.userType === "customer") {
@@ -42,13 +43,20 @@ export default function Chat() {
     }
   }, [currentUser]);
 
+  // useEffect(() => {
+  //   if (socket.current) {
+  //     console.log("online_status listener");
+  //     socket.current.on("online_status", (userId) => {
+  //       console.log("User online: ", userId);
+  //     });
+  //   }
+  // }, [socket]);
+
   useEffect(() => {
     async function fetchUsers() {
       if (currentUser) {
-        console.log(window.cust);
         const fetchUserType =
           currentUser.userType === window.cust ? window.agent : window.cust;
-        console.log(fetchUserType);
         const data = await axios.get(`${allUserTypeRoute}/${fetchUserType}`);
         setContacts(data.data);
       }

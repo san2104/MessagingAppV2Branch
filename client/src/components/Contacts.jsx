@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-//import Logo from "../assets/logo.svg";
 import Logout from "./Logout";
+import { BsCircleFill } from "react-icons/bs";
 import Logo from "../assets/branchLogo.png";
 
 export default function Contacts({ contacts, changeChat }) {
@@ -40,6 +40,7 @@ export default function Contacts({ contacts, changeChat }) {
                 onClick={() => changeCurrentChat(index, contact)}
               >
                 <div className="username">
+                  <BsCircleFill />
                   <h3>{contact.username}</h3>
                 </div>
               </div>
@@ -100,6 +101,12 @@ const Container = styled.div`
           color: black;
           font-weight: 400;
           margin-left: 1rem;
+          display: inline-block;
+        }
+        svg {
+          margin-left: 0.5rem;
+          font-size: 1rem;
+          color: green;
         }
       }
     }

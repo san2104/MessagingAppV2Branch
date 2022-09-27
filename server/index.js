@@ -54,6 +54,7 @@ io.on("connection", (socket) => {
   });
 
   socket.on("add-user", (userId) => {
+    console.log("user connected", socket.id);
     onlineUsers.set(userId, socket.id);
   });
 
@@ -67,11 +68,9 @@ io.on("connection", (socket) => {
 
   socket.on("cust_online", (custId) => {
     onlineCust.set(custId, socket.id);
-    console.log("cust_online", onlineCust);
   });
 
   socket.on("agent_online", (agentId) => {
     onlineAgents.set(agentId, socket.id);
-    console.log("agent_online", onlineAgents);
   });
 });
