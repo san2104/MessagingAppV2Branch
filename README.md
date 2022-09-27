@@ -4,34 +4,34 @@
 
 to install UI dependencies, run
 
-### 'yarn install'
+### `yarn install`
 
 to start the client, run
 
-### 'yarn start'
+### `yarn start`
 
-**Note: default client URL is 'http://localhost/3000'**
+**Note: default client URL is `http://localhost/3000`**
 
 ## Server Dependencies
 
 to install server dependencies, run
 
-### 'yarn install'
+### `yarn install`
 
-in '/server/.env' file please change the mongoDB URL to your local mongo URL. (local MongoDB installation is needed)
+in `/server/.env` file please change the mongoDB URL to your local mongo URL. (local MongoDB installation is needed)
 
 to start the server
 
-### 'yarn start'
+### `yarn start`
 
-**Note: default server URL is 'http://localhost/3001'**
+**Note: default server URL is `http://localhost/3001`**
 
 # App Features:
 
 ## Status Quo
 
 1. Interaction between customer and agent is real-time.(-socket.io)
-2. Connection is persistent. Page reload/refresh/new tab doesn't affect the logged in user session.
+2. Connection is persistent. Page reload/refresh/new tab doesn`t affect the logged in user session.
 3. Agents can see customers only(as of now, if needed agents can also see other agents)
 4. Customers can only see agents.
 5. Multiple agents can login at the same time, multiple customers can login at the same time.
