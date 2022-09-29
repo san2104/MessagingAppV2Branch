@@ -10,7 +10,7 @@ to start the client, run
 
 ### `yarn start`
 
-**Note: default client URL is `http://localhost/3000`**
+**Note: default client URL is `http://localhost:3000`**
 
 ## Server Dependencies
 
@@ -24,7 +24,7 @@ to start the server
 
 ### `yarn start`
 
-**Note: default server URL is `http://localhost/3001`**
+**Note: default server URL is `http://localhost:3001`**
 
 # App Features:
 
