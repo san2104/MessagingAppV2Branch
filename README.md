@@ -38,7 +38,7 @@ to start the server
 6. Messages are stored in database. Once customer/agent sign in, they can see the previous conversation.
 7. UI design takes into consideration the current https://branchapp.in/ website/app desing and color scheme so that the users can have consistent experience through out the journey.
 8. UI is simple and interactive yet blazing fast(- react.JS)
-9. backend is scale ready(- mongoDB)
+9. Backend is scale ready(- mongoDB)
 10. Socket.io library is scale ready with mongoDB. (Adding more db nodes is supported in socket.io)
 11. Simple Login/Register screen. (Auth tokens will be integrated in the future development)
 
